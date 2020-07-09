@@ -1,0 +1,148 @@
+:root {
+  --textColor: #28262E;
+  --titleColor: #3E3B47;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #E5E5E5;
+  height: 100vh;
+
+}
+
+.header, .footer {
+  height: 150px;
+  font-size: 32px;
+
+  border-bottom: #88ce02 solid 4px;
+  background-color: #262626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+
+  margin-bottom: 100px;
+}
+.header span {
+  color: #88ce02;
+  font-weight: bold;
+}
+
+
+main {
+  max-width: 980px;
+  width: 90%;
+  margin: auto;
+}
+
+article.publicacoes {
+  display: grid;
+  grid-template-columns: repeat(6 , 1fr);
+
+  grid-template-rows: repeat(1, auto 1fr auto);
+  gap: 20px;
+}
+
+section.publicacao {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 2px -2px rgba(197,194,194, 0.2);
+
+  border-radius: 8px;
+
+  display: grid;
+  grid-row: span 3;
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-rows: subgrid;
+
+  grid-column:  span 3;
+  grid-template-columns:  repeat(3, 1fr);
+  grid-template-columns: subgrid;
+
+}
+section.publicacao .title {
+  color: #c00000;
+  font-size: 24px;
+  grid-column: span 3;
+}
+
+section.publicacao p {
+  line-height: 28px;
+  color: var(--textColor);
+  text-align: justify;
+  grid-column: span 3;
+  margin: 16px 0;
+}
+
+section.publicacao .icons {
+  grid-column:  span 3;
+  grid-template-columns:  repeat(3, 1fr);
+  
+  justify-content: center;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: subgrid;
+}
+section.publicacao .icons i {
+  width: 24px;
+  height: 24px;
+}
+
+
+section.publicacao span {
+  margin-right: 20px;
+
+  text-align: left;
+  margin: 0;
+  cursor: pointer;
+}
+
+section.publicacao span .comment {
+  color: #00c2ff;
+}
+
+section.publicacao span .favorites {
+  color: #ff0000;
+}
+
+section.publicacao span .cached {
+  color: #40c800;
+}
+
+
+.footer {
+  height: 250px;
+  background-color: #262626;
+  border-top: #88ce02 solid 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: auto;
+  margin-bottom: 0;
+  margin-top: 450px;
+}
+
+.footer span {
+  color: #88ce02;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 850px) {
+  .publicacoes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .publicacao {
+    grid-template-rows: auto 1fr auto;
+  }
+}
+
