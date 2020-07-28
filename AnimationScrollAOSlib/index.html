@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+
+  <title>Animation Scroll with AOS Lib</title>
+</head>
+<body>
+  <header class="main-header">
+    <h1>Animation Scroll</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, facere?</p>
+  </header>
+  
+  <main class="container">
+    <section class="card">
+      <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Office">
+      <div>
+        <h3>Section Card one</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, 
+          quaerat sequi. Unde optio aliquam harum labore deleniti perspiciatis 
+          reprehenderit? Obcaecati nemo illum iste minima voluptates velit saepe 
+          commodi animi corrupti!
+        </p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1579403124614-197f69d8187b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=80" alt="Programming">
+      <div>
+        <h3>Section Card two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, 
+          quaerat sequi. Unde optio aliquam harum labore deleniti perspiciatis 
+          reprehenderit? Obcaecati nemo illum iste minima voluptates velit saepe 
+          commodi animi corrupti!
+        </p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Developers working hard">      
+      <div>
+        <h3>Section Card three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, 
+          quaerat sequi. Unde optio aliquam harum labore deleniti perspiciatis 
+          reprehenderit? Obcaecati nemo illum iste minima voluptates velit saepe 
+          commodi animi corrupti!
+        </p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-left">
+      <img src="https://images.unsplash.com/photo-1531972111231-7482a960e109?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80" alt="Office 2">
+      <div>
+        <h3>Section Card four</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, 
+          quaerat sequi. Unde optio aliquam harum labore deleniti perspiciatis 
+          reprehenderit? Obcaecati nemo illum iste minima voluptates velit saepe 
+          commodi animi corrupti!
+        </p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+    <section class="card" data-aos="fade-right">
+      <img src="https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Keyboard">
+      <div>
+        <h3>Section Card five</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, 
+          quaerat sequi. Unde optio aliquam harum labore deleniti perspiciatis 
+          reprehenderit? Obcaecati nemo illum iste minima voluptates velit saepe 
+          commodi animi corrupti!
+        </p>
+        <a href="#" class="btn">Buy Now</a>
+      </div>
+    </section>
+
+  </main>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script >
+    AOS.init({
+      offset: 400,
+      duration: 1000
+    });
+  </script>
+</body>
+</html>
