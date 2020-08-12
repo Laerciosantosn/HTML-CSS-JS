@@ -13,26 +13,28 @@
     />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Loguin Sliding Sign In & Sign Up</title>
+    <title>Login Sliding Sign In & Sign Up</title>
   </head>
   <body>
     <section class="container">
-      <div class="forms-container">
+      <div class="form-container">
         <div class="signin-signup">
           <form action="" class="sign-in-form">
             <h2 class="title">Sign-in</h2>
 
             <div class="input-field">
-              <span class="material-icons">
+              <i class="fas fa-user"></i>
+              <!-- <span class="material-icons">
                 person
-              </span>
+              </span> -->
               <input type="text" placeholder="Username" />
             </div>
 
             <div class="input-field">
-              <span class="material-icons">
+              <i class="fas fa-lock"></i>
+              <!-- <span class="material-icons">
                 lock
-              </span>
+              </span> -->
               <input type="password" name="" placeholder="Password" />
             </div>
 
@@ -50,23 +52,26 @@
             <h2 class="title">Sign-up</h2>
 
             <div class="input-field">
-              <span class="material-icons">
+              <i class="fas fa-user"></i>
+              <!-- <span class="material-icons">
                 person
-              </span>
+              </span> -->
               <input type="text" placeholder="Username" />
             </div>
 
             <div class="input-field">
-              <span class="material-icons">
+              <i class="fas fa-envelope"></i>
+              <!-- <span class="material-icons">
                 email
-              </span>
+              </span> -->
               <input type="text" placeholder="Email" />
             </div>
 
             <div class="input-field">
-              <span class="material-icons">
+              <i class="fas fa-lock"></i>
+              <!-- <span class="material-icons">
                 lock
-              </span>
+              </span> -->
               <input type="password" name="" placeholder="Password" />
             </div>
 
@@ -111,6 +116,61 @@
       </div>
     </section>
 
+
+    <!-- Second Login -->
+
+
+    <section class="body">
+      <div class="container2" id="container">
+        <div class="form-container2 sign-up-container">
+          <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a> 
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>Or use your email for registration</span>
+            <input type="text" placeholder="Name" class="input"/>
+            <input type="email" placeholder="Email" class="input"/>
+            <input type="password" placeholder="Password" class="input"/>
+            <button class="button">Sign Up</button>
+          </form>
+        </div>
+
+        <div class="form-container2 sign-in-container">
+          <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a> 
+             <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <span>Or use your account</span>
+            <input type="email" placeholder="Email" class="input"/>
+            <input type="password" placeholder="Password" class="input"/>
+            <button class="button">Sign In</button>
+          </form>
+        </div>
+
+        <div class="overlay-container">
+          <div class="overlay">
+            <div class="overlay-panel overlay-left">
+              <h1>Welcome Back!</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="ghost button" id="signIn">Sign In</button>
+            </div>
+
+            <div class="overlay-panel overlay-right">
+              <h1>Hello, Friend!</h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <button class="ghost button" id="signUp">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- <div>
       Icons made by
       <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
@@ -120,6 +180,7 @@
       <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
     </div> -->
     <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </body>
 </html>
 
