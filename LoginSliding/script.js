@@ -25,3 +25,21 @@ signUpButton.addEventListener('click', () => {
 signInButton.addEventListener('click', () => {
   container2.classList.remove('right-panel-active')
 })
+
+// Script for threeth login
+
+const loginId = document.getElementById("login")
+const registerId = document.getElementById("register")
+const buttonId = document.getElementById("btn")
+
+function register () {
+  loginId.style.left = "-400px";
+  registerId.style.left = "50px";
+  buttonId.style.left = "110px";
+}
+
+function login () {
+  loginId.style.left = "50px";
+  registerId.style.left = "450px";
+  buttonId.style.left = "0px";
+}

@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="stylelogin1.css" />
     <link rel="stylesheet" href="stylelogin2.css" />
+    <link rel="stylesheet" href="stylelogin3.css" />
 
     <title>Login Sliding Sign In & Sign Up</title>
   </head>
@@ -119,6 +120,7 @@
     </section>
   </div>
 
+
     <!-- Second Login -->
 
 
@@ -174,19 +176,46 @@
       </div>
     </section>
 
-    <!-- <div>
-      Icons made by
-      <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
-        >Freepik</a
-      >
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-    </div> -->
+
+
+    <!-- Login 3 -->
+
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">Sign in</button>
+          <button type="button" class="toggle-btn" onclick="register()">Sign up</button>
+        </div>
+      
+
+      <div class="social-icons">
+        <a href="#" class="icons"><i class="fab fa-facebook-f"></i></a> 
+        <a href="#" class="icons"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#" class="icons"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      
+      <form id="login" class="input-group">
+        <input type="text" class="input-field2" placeholder="User" required>
+        <input type="text" class="input-field2" placeholder="Password" required>
+        <input type="checkbox" class="check-box">
+        <span>Remember password</span>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+
+      <form id="register" class="input-group">
+        <input type="text" class="input-field2" placeholder="User" required>
+        <input type="email" class="input-field2" placeholder="Email" required>
+        <input type="text" class="input-field2" placeholder="Password" required>
+        <input type="checkbox" class="check-box">
+        <span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+
+    </div>
+</div>
+
     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </body>
 </html>
-
-<!-- <span class="material-icons">
-  email
-  </span> -->

@@ -6,8 +6,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: -20px 0 50px;
+  /* margin: -20px 0 50px; */
   padding: 5%;
+  background: #f6f6f6;
 }
 
 h1 {
